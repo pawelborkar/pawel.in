@@ -1,0 +1,21 @@
+.main {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border: 1px solid salmon;
+  /* background-color: #2a1244d8; */
+  background-color: #ffffff;
+}
+.app {
+  min-width: 640px;
+  max-width: 840px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  border: 1px solid salmon;
+  /* background-color: #2a1244d8; */
+  background-color: #ffffff;
+}
