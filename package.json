@@ -2,6 +2,17 @@
   "name": "pawel.in",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Pawel Borkar",
+    "email": "pawel@duck.com",
+    "url": "https://pawel.in"
+  },
+  "homepage": "https://pawel.in",
+  "license": "Apache-2.0 License",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pawelborkar/pawel.in/"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +20,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@geist-ui/core": "^2.3.8",
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
