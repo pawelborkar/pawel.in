@@ -2,6 +2,17 @@
   "name": "pawel.in",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Pawel Borkar",
+    "email": "pawel@duck.com",
+    "url": "https://pawel.in"
+  },
+  "homepage": "https://pawel.in",
+  "license": "Apache-2.0 License",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pawelborkar/pawel.in/"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,14 +20,21 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@geist-ui/core": "^2.3.8",
     "@types/node": "18.15.0",
     "@types/react": "18.0.28",
     "@types/react-dom": "18.0.11",
     "eslint": "8.36.0",
     "eslint-config-next": "13.2.4",
+    "jotai": "^2.0.3",
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.8.0",
+    "react-particles": "^2.9.3",
+    "react-tsparticles": "^2.9.3",
+    "tsparticles": "^2.9.3",
+    "tsparticles-engine": "^2.9.3",
     "typescript": "4.9.5"
   }
 }
