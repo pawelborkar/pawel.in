@@ -11,7 +11,9 @@ const HomePage = () => {
       <Grid>
         <Grid style={{ fontWeight: 500 }}>
           <Text b style={{ letterSpacing: '0.6px' }} h1>
-            <Text span>P</Text>
+            <Text span style={{ backgroundColor: '#ffbe0b', color: '#000000' }}>
+              P
+            </Text>
             <Text span type='warning'>
               A
             </Text>
@@ -25,7 +27,9 @@ const HomePage = () => {
               L
             </Text>
             {/* <Text/> */}
-            <Text span>B</Text>
+            <Text span style={{ backgroundColor: '#9bf6ff', color: '#000000' }}>
+              B
+            </Text>
             <Text span type='warning'>
               O
             </Text>

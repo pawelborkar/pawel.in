@@ -15,17 +15,3 @@ export const style = {
   },
 };
 
-// {
-
-//   tab: {
-//     color: #000000 ;
-//   },
-//   img :{
-//     width: 200px ;
-//     height: 200px !important;
-//     border-radius: 50% !important;
-//     background-repeat: no-repeat;
-//     background-position: center;
-//     background-size: cover;
-//   }
-// }
