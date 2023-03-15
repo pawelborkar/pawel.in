@@ -7,6 +7,8 @@ export const style = {
     padding: '0.5rem',
   },
   img: {
+    width:"640px",
+    outerHeight:"240px",
     borderRadius: '50%',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
