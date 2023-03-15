@@ -1,5 +1,4 @@
-import { Text } from '@geist-ui/core';
-import React from 'react';
+import { Divider, Text } from '@geist-ui/core';
 
 const About = () => {
   return (
@@ -13,7 +12,7 @@ const About = () => {
     
     */}
       <header>
-        <Text b i style={{ letterSpacing: '0.6px' }} h2>
+        <Text b style={{ letterSpacing: '0.6px' }} h2 marginTop={4}>
           <Text span type='success'>
             A
           </Text>
@@ -31,7 +30,16 @@ const About = () => {
           </Text>
         </Text>
       </header>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ipsum fugiat officia quam dolorem obcaecati, cum, unde et odio sequi nesciunt ipsa libero! Deleniti quod architecto repellendus blanditiis eius labore?</p>
+      <Text p marginBottom={1}>
+        Hi, I&apos;m Pawel.
+      </Text>
+      <Text p marginBottom={2}>
+        I&apos;m currently working as a <Text b>Software Engineer</Text> at
+        Konverge AI, where I&apos;m currently working on a product which will
+        help developers to manage multiple databases with an ease at a single
+        place, take insights, extract data and run AI/ML operations.
+      </Text>
+      <Divider />
     </>
   );
 };

@@ -3,19 +3,20 @@
   height: 100vh;
   display: flex;
   justify-content: center;
-  align-items: start;
-  border: 1px solid salmon;
-  /* background-color: #2a1244d8; */
-  background-color: #ffffff;
+  align-items: flex-start;
+
+  color: #cacaca !important;
+}
+.active {
+  color: '#fbd38d' !important;
 }
 .app {
-  min-width: 640px;
-  max-width: 840px;
+  color: #cacaca !important;
+  width: 840px;
   min-height: 100vh;
   display: flex;
-  justify-content: center;
-  align-items: start;
-  border: 1px solid salmon;
-  /* background-color: #2a1244d8; */
-  background-color: #ffffff;
+  justify-content: flex;
+  align-items: flex-start;
+  /* border: 1px solid #f572fa; */
 }
+

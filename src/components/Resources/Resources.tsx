@@ -1,9 +1,18 @@
-import React from 'react'
+import { Grid } from '@geist-ui/core';
+import React from 'react';
 
 const Resources = () => {
   return (
-    <div>Resources</div>
-  )
-}
+    <Grid
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+      }}
+    >
+      Coming Soon
+    </Grid>
+  );
+};
 
-export default Resources
+export default Resources;

@@ -1,16 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Avatar, Tabs } from '@geist-ui/core';
 import { Inter } from 'next/font/google';
+import { Grid, Tabs } from '@geist-ui/core';
+import { BsMoonStarsFill, BsSun } from 'react-icons/bs';
 import styles from '@/styles/Home.module.css';
-import {
-  About,
-  Blog,
-  Contact,
-  Content,
-  HomePage,
-  Resources,
-} from '@/components';
+import { About, Blog, Content, HomePage, Resources } from '@/components';
+import { useAtom } from 'jotai';
+import { darkModeToggleAtom } from '@/globalStates';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -45,15 +40,15 @@ const TabContent = [
     value: 'resources',
     component: <Resources />,
   },
-  {
-    id: 6,
-    label: 'Contact',
-    value: 'contact',
-    component: <Contact />,
-  },
 ];
 
 export default function Home() {
+  const [isDark, setIsDark] = useAtom(darkModeToggleAtom);
+  const toggle = (e: React.BaseSyntheticEvent) => {
+    setIsDark(!isDark);
+    localStorage.setItem('darkMode', JSON.stringify(isDark));
+  };
+
   return (
     <>
       <Head>
@@ -62,9 +57,21 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      <main className={styles.main}>
+      <main
+        className={styles.main}
+        style={{
+          backgroundColor: isDark ? '#191128' : '#fff6ea',
+          transition: '1.5s'
+        }}
+      >
         <div className={styles.app}>
-          <Tabs initialValue='html' hideDivider hideBorder leftSpace={0}>
+          <Tabs
+            style={{ width: '100%', padding: '2rem' }}
+            font={'20px'}
+            initialValue='1'
+            hideBorder
+            leftSpace={0}
+          >
             {TabContent.map((Tab) => {
               return (
                 <Tabs.Item key={Tab.id} label={Tab.label} value={Tab.value}>
@@ -74,6 +81,13 @@ export default function Home() {
             })}
           </Tabs>
         </div>
+        <Grid style={{ cursor: 'pointer', padding: '2rem' }} onClick={toggle}>
+          {isDark ? (
+            <BsSun fontSize={24} />
+          ) : (
+            <BsMoonStarsFill fontSize={18} style={{ color: '#000' }} />
+          )}
+        </Grid>
       </main>
     </>
   );
