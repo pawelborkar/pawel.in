@@ -60,7 +60,7 @@ const HomePage = () => {
       <Grid>
         <Image
           style={style.img}
-          src='https://res.cloudinary.com/itspawel/image/upload/v1678921578/Picsart_23-03-16_04-30-22-258_bbxynx.jpg'
+          src='https://res.cloudinary.com/itspawel/image/upload/v1678921578/pawel-borkar.jpg'
           alt="Pawel's profile picture"
         />
       </Grid>
