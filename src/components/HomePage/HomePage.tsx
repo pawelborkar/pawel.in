@@ -3,6 +3,7 @@ import { useAtom } from 'jotai';
 import { darkModeToggleAtom } from '@/globalStates';
 import { Inter } from 'next/font/google';
 import { style } from './homepage.css';
+import Background from '../Background/Background';
 const inter = Inter({ subsets: ['latin'] });
 const HomePage = () => {
   const [isDark] = useAtom(darkModeToggleAtom);

@@ -3,7 +3,14 @@ import { Inter } from 'next/font/google';
 import { Grid, Tabs } from '@geist-ui/core';
 import { BsMoonStarsFill, BsSun } from 'react-icons/bs';
 import styles from '@/styles/Home.module.css';
-import { About, Blog, Content, HomePage, Resources } from '@/components';
+import {
+  About,
+  Background,
+  Blog,
+  Content,
+  HomePage,
+  Resources,
+} from '@/components';
 import { useAtom } from 'jotai';
 import { darkModeToggleAtom } from '@/globalStates';
 
@@ -61,14 +68,18 @@ export default function Home() {
         className={styles.main}
         style={{
           backgroundColor: isDark ? '#191128' : '#fff6ea',
-          transition: '1.5s'
+          transition: '1.5s',
         }}
       >
+        <Background />
         <div className={styles.app}>
           <Tabs
-            style={{ width: '100%', padding: '2rem' }}
+            style={{
+              width: '100%',
+              padding: '2rem',
+            }}
             font={'20px'}
-            initialValue='1'
+            initialValue='html'
             hideBorder
             leftSpace={0}
           >
