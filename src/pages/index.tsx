@@ -13,6 +13,7 @@ import {
 } from '@/components';
 import { useAtom } from 'jotai';
 import { darkModeToggleAtom } from '@/globalStates';
+import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -100,6 +101,9 @@ export default function Home() {
           )}
         </Grid>
       </main>
+      {/* <footer>
+        <Footer />
+      </footer> */}
     </>
   );
 }

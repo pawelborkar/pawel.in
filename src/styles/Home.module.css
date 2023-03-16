@@ -4,7 +4,6 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
   color: #cacaca !important;
 }
 .active {
@@ -19,4 +18,3 @@
   align-items: flex-start;
   /* border: 1px solid #f572fa; */
 }
-

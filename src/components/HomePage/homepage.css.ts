@@ -7,13 +7,11 @@ export const style = {
     padding: '0.5rem',
   },
   img: {
-    width:"640px",
-    outerHeight:"240px",
+    width: '440px',
+    outerHeight: '240px',
     borderRadius: '50%',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
     backgroundSize: 'cover',
-    
   },
 };
-
