@@ -1,6 +1,7 @@
 import { Divider, Grid, Text } from '@geist-ui/core';
 import { useAtom } from 'jotai';
 import { darkModeToggleAtom } from '@/globalStates';
+import Link from 'next/link';
 const About = () => {
   const [isDark] = useAtom(darkModeToggleAtom);
   return (
@@ -24,7 +25,7 @@ const About = () => {
           </Text>
         </Text>
       </header>
-      <Grid style={{ color: isDark ? '#C9D1D9' : '#262626' }}>
+      <Grid font={1} style={{ color: isDark ? '#C9D1D9' : '#262626' }}>
         <Text p marginBottom={1}>
           Hi, I&apos;m <Text b>Pawel</Text>.
         </Text>
@@ -34,9 +35,23 @@ const About = () => {
           help developers to manage multiple databases with an ease at a single
           place, take insights, extract data and run AI/ML operations.
         </Text>
-      </Grid>
 
-      <Divider />
+        <Divider />
+        <Text p>
+          As an inquisitive person, I&apos;m always curious to learn something
+          new every and as a result of this you will find me reading some or the
+          other thing on the internet, reading a book or watching some
+          interesting Ted Talk on youtube. I also have a keen interest in human
+          pyschology and why people behave the way they do. Apart from this I
+          love to write whether it&apos;s a quote, poem, shayari or code.
+        </Text>
+        <Text>
+          In my free time you&apos;ll always find me learning something new
+          whether it&apos;s learing to play some musical instruments like
+          kalimba, piano or guitar.
+        </Text>
+        <Divider />
+      </Grid>
     </>
   );
 };

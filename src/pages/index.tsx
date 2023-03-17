@@ -13,6 +13,7 @@ import {
 } from '@/components';
 import { useAtom } from 'jotai';
 import { darkModeToggleAtom } from '@/globalStates';
+import Footer from '@/components/Footer/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -43,8 +44,8 @@ const TabContent = [
   },
   {
     id: 5,
-    label: 'Resources',
-    value: 'resources',
+    label: 'Projects',
+    value: 'projects',
     component: <Resources />,
   },
 ];
@@ -68,24 +69,15 @@ export default function Home() {
         className={styles.main}
         style={{
           backgroundColor: isDark ? '#191128' : '#fff6ea',
-          transition: '1.5s',
+          transition: '1.2s',
         }}
       >
         <Background />
         <div className={styles.app}>
-          <Tabs
-            style={{
-              width: '100%',
-              padding: '2rem',
-            }}
-            font={'20px'}
-            initialValue='html'
-            hideBorder
-            leftSpace={0}
-          >
+          <Tabs initialValue='1' leftSpace={0}>
             {TabContent.map((Tab) => {
               return (
-                <Tabs.Item key={Tab.id} label={Tab.label} value={Tab.value}>
+                <Tabs.Item key={Tab.id} label={Tab.label} value={Tab.id.toString()}>
                   {Tab.component}
                 </Tabs.Item>
               );
@@ -100,6 +92,9 @@ export default function Home() {
           )}
         </Grid>
       </main>
+      {/* <footer>
+        <Footer />
+      </footer> */}
     </>
   );
 }

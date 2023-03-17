@@ -1,22 +1,18 @@
 .main {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: flex-start;
-
   color: #cacaca !important;
-}
-.active {
-  color: '#fbd38d' !important;
 }
 .app {
   color: #cacaca !important;
-  width: 840px;
-  min-height: 100vh;
+  min-width: 280px;
+  max-width: 840px;
+  height: 100vh;
   display: flex;
   justify-content: flex;
   align-items: flex-start;
   /* border: 1px solid #f572fa; */
 }
-

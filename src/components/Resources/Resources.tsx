@@ -3,14 +3,11 @@ import React from 'react';
 
 const Resources = () => {
   return (
-    <Grid
-      style={{
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-      }}
-    >
-      Coming Soon
+    <Grid>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio culpa
+      ipsum minus excepturi veniam voluptates quas magni exercitationem eaque
+      ipsa laudantium hic aspernatur, maiores fugit ducimus reiciendis quae
+      corrupti.
     </Grid>
   );
 };

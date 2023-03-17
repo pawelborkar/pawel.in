@@ -1,15 +1,10 @@
 import { useCallback } from 'react';
 import type { Container, Engine } from 'tsparticles-engine';
-import Particles from 'react-particles';
+import Particles from 'react-tsparticles';
 import { loadFull } from 'tsparticles';
 
 const Background = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
-    console.log(engine);
-
-    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
 
@@ -38,12 +33,12 @@ const Background = () => {
             value: '#ff0000',
             animation: {
               enable: true,
-              speed: 180,
+              speed: 200,
               sync: true,
             },
           },
           shape: {
-            type: 'circle',
+            type: 'star',
             stroke: {
               width: 0,
               color: '#000000',
@@ -51,14 +46,9 @@ const Background = () => {
             polygon: {
               nb_sides: 5,
             },
-            image: {
-              src: 'https://cdn.matteobruni.it/images/particles/github.svg',
-              width: 100,
-              height: 100,
-            },
           },
           opacity: {
-            value: 0.5,
+            value: 0.125,
             random: false,
             anim: {
               enable: false,
