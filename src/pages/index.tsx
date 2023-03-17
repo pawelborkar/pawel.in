@@ -44,8 +44,8 @@ const TabContent = [
   },
   {
     id: 5,
-    label: 'Resources',
-    value: 'resources',
+    label: 'Projects',
+    value: 'projects',
     component: <Resources />,
   },
 ];
@@ -69,7 +69,7 @@ export default function Home() {
         className={styles.main}
         style={{
           backgroundColor: isDark ? '#191128' : '#fff6ea',
-          transition: '1.5s',
+          transition: '1.2s',
         }}
       >
         <Background />

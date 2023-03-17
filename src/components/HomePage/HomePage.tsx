@@ -56,7 +56,7 @@ const HomePage = () => {
           </Text>
         </Grid>
       </Grid>
-      <Grid>
+      <Grid width='120px' height='120px '>
         <Image
           style={style.img}
           src='https://res.cloudinary.com/itspawel/image/upload/v1678921578/pawel-borkar.jpg'
