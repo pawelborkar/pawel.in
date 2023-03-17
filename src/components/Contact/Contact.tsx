@@ -1,8 +1,9 @@
+import { Grid } from '@geist-ui/core'
 import React from 'react'
 
 const Contact = () => {
   return (
-    <div>Contact</div>
+    <Grid>Contact</Grid>
   )
 }
 

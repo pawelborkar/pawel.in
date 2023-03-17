@@ -6,9 +6,6 @@
   align-items: flex-start;
   color: #cacaca !important;
 }
-.active {
-  color: '#fbd38d' !important;
-}
 .app {
   color: #cacaca !important;
   min-width: 280px;
