@@ -74,19 +74,10 @@ export default function Home() {
       >
         <Background />
         <div className={styles.app}>
-          <Tabs
-            style={{
-              width: '100%',
-              padding: '2rem',
-            }}
-            font={'20px'}
-            initialValue='html'
-            hideBorder
-            leftSpace={0}
-          >
+          <Tabs initialValue='1' leftSpace={0}>
             {TabContent.map((Tab) => {
               return (
-                <Tabs.Item key={Tab.id} label={Tab.label} value={Tab.value}>
+                <Tabs.Item key={Tab.id} label={Tab.label} value={Tab.id.toString()}>
                   {Tab.component}
                 </Tabs.Item>
               );
