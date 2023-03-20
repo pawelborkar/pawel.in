@@ -7,7 +7,13 @@ export const style = {
     padding: '0.5rem',
   },
   img: {
-    maxWidth: '50%',
+    display: 'flex',
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    width: '184px',
+
+    // height:00,
+    // maxWidth: '50%',
     // height: '100%',
     // innerHeight: '240px',
     borderRadius: '50%',

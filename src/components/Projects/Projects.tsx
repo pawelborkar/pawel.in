@@ -1,7 +1,7 @@
 import { Grid } from '@geist-ui/core';
 import React from 'react';
 
-const Resources = () => {
+const Projects = () => {
   return (
     <Grid>
       Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio culpa
@@ -12,4 +12,4 @@ const Resources = () => {
   );
 };
 
-export default Resources;
+export default Projects;

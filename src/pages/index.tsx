@@ -14,6 +14,7 @@ import {
 import { useAtom } from 'jotai';
 import { darkModeToggleAtom } from '@/globalStates';
 import Footer from '@/components/Footer/Footer';
+import Projects from '@/components/Projects/Projects';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -30,23 +31,23 @@ const TabContent = [
     value: 'blog',
     component: <Blog />,
   },
+  // {
+  //   id: 4,
+  //   label: 'Content',
+  //   component: <Content />,
+  // },
+  //   value: 'content',
+  {
+    id: 5,
+    label: 'Projects',
+    value: 'projects',
+    component: <Projects />,
+  },
   {
     id: 3,
     label: 'About',
     value: 'about',
     component: <About />,
-  },
-  {
-    id: 4,
-    label: 'Content',
-    value: 'content',
-    component: <Content />,
-  },
-  {
-    id: 5,
-    label: 'Projects',
-    value: 'projects',
-    component: <Resources />,
   },
 ];
 
@@ -77,7 +78,11 @@ export default function Home() {
           <Tabs initialValue='1' leftSpace={0}>
             {TabContent.map((Tab) => {
               return (
-                <Tabs.Item key={Tab.id} label={Tab.label} value={Tab.id.toString()}>
+                <Tabs.Item
+                  key={Tab.id}
+                  label={Tab.label}
+                  value={Tab.id.toString()}
+                >
                   {Tab.component}
                 </Tabs.Item>
               );
