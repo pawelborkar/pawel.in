@@ -1,15 +1,20 @@
-import { darkModeToggleAtom } from '@/globalStates';
-import { Card, Grid, Image, Text } from '@geist-ui/core';
 import { useAtom } from 'jotai';
-import React from 'react';
+import { Card, Grid, Image, Text } from '@geist-ui/core';
+import { darkModeToggleAtom } from '@/globalStates';
 
-const BlogCard = (props: any) => {
-  const {
-    id,
-    title,
-    cover_image: imageSrc,
-    published_at: publishedDate,
-  } = props.props;
+interface IBlogDetails {
+  id: number;
+  title: string;
+  cover_image: string;
+  published_at: string;
+}
+
+const BlogCard = ({
+  id,
+  title,
+  cover_image: imageSrc,
+  published_at: publishedDate,
+}: IBlogDetails) => {
   const [isDark] = useAtom(darkModeToggleAtom);
   return (
     <Card
@@ -25,7 +30,6 @@ const BlogCard = (props: any) => {
       </Text>
       <Grid>
         <Text>{publishedDate}</Text>
-        {/* <Text>{description}</Text> */}
       </Grid>
     </Card>
   );
