@@ -1,13 +1,12 @@
+import { useEffect, useState } from 'react';
 import { Grid, Text } from '@geist-ui/core';
 import axios from 'axios';
 import Link from 'next/link';
-import React, { useEffect, useId, useState } from 'react';
-import BlogCard from '../BlogCard/BlogCard';
+import { BlogCard } from '@/components';
 
 const Blog = () => {
   const [blogPosts, setBlogPosts] = useState<Array<null>>([]);
 
-  // const URL = `https://dev.to/api/articles?username=pb​`;
   const fetchBlogs = async () => {
     const options = {
       method: 'GET',
@@ -47,7 +46,7 @@ const Blog = () => {
       <Grid style={{ overflow: 'scroll', height: '80vh' }}>
         {blogPosts.map((blog: any) => (
           <Link href={blog?.url} key={blog?.id} target='_blank'>
-            <BlogCard props={blog} />
+            <BlogCard {...blog} />
           </Link>
         ))}
       </Grid>

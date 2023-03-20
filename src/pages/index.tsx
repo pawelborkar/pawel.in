@@ -2,19 +2,17 @@ import Head from 'next/head';
 import { Inter } from 'next/font/google';
 import { Grid, Tabs } from '@geist-ui/core';
 import { BsMoonStarsFill, BsSun } from 'react-icons/bs';
-import styles from '@/styles/Home.module.css';
 import {
   About,
   Background,
   Blog,
-  Content,
+  Footer,
   HomePage,
-  Resources,
+  Projects,
 } from '@/components';
 import { useAtom } from 'jotai';
 import { darkModeToggleAtom } from '@/globalStates';
-import Footer from '@/components/Footer/Footer';
-import Projects from '@/components/Projects/Projects';
+import styles from '@/styles/Home.module.css';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -31,12 +29,6 @@ const TabContent = [
     value: 'blog',
     component: <Blog />,
   },
-  // {
-  //   id: 4,
-  //   label: 'Content',
-  //   component: <Content />,
-  // },
-  //   value: 'content',
   {
     id: 5,
     label: 'Projects',
