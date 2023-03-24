@@ -46,7 +46,6 @@ const ProjectCard = ({
           <Button
             icon={<FaGithub  color='#fff'/>}
             style={{ border: 'none', color:"#ffffff", backgroundColor: '#0070f3', boxShadow: '0 4px 14px 0 rgba(0,118,255,0.39)' }}
-           
           >
             Code
           </Button>
