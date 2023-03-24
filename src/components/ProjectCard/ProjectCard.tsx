@@ -16,7 +16,7 @@ const ProjectCard = ({
   url,
 }: IProjectProps) => {
   return (
-    <Card shadow marginBottom={1} style={{ backgroundColor: '#f9b5ac' }}>
+    <Card  marginBottom={1} style={{ backgroundColor: '#ffff', boxShadow: '4px 8px 12px rgba(0,0,0,.3)'  }}>
       <Text h4 my={0}>
         {title}
       </Text>
@@ -26,7 +26,7 @@ const ProjectCard = ({
         {tags.map((tag, idx) => (
           <Tag
             key={idx}
-            style={{ backgroundColor: '#3d405b  ' }}
+            style={{ borderRadius:'6px',color:"#ffffff", backgroundColor: '#000000',boxShadow: '0 4px 14px 0 rgba(0,0,0,.3)' }}
             invert
             margin={0.5}
           >
@@ -38,15 +38,14 @@ const ProjectCard = ({
       <Grid
         style={{
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'flex-start',
           alignItems: 'center',
         }}
       >
         <Link href={sourceCode} target='_blank'>
           <Button
-            icon={<FaGithub />}
-            style={{ backgroundColor: '#f9f7f3' }}
-            scale={0.85}
+            icon={<FaGithub  color='#fff'/>}
+            style={{ border: 'none', color:"#ffffff", backgroundColor: '#0070f3', boxShadow: '0 4px 14px 0 rgba(0,118,255,0.39)' }}
           >
             Code
           </Button>
@@ -54,8 +53,8 @@ const ProjectCard = ({
         <Spacer h={1} />
         <Link href={url} target='_blank'>
           <Button
-            icon={<FaGlobe />}
-            style={{ backgroundColor: '#f9f7f3' }}
+            icon={<FaGlobe color='#fff'/>}
+            style={{border: 'none', backgroundColor: '#ff0090',  color:"#ffffff", boxShadow: '0 4px 8px 0 #f49ac2 ' }}
             scale={0.85}
           >
             Visit
