@@ -3,30 +3,18 @@ import { Grid, Text } from '@geist-ui/core';
 import axios from 'axios';
 import Link from 'next/link';
 import { BlogCard } from '@/components';
+import { BlogPosts } from './BlogList';
+export interface IBlogDetails {
+  id: number;
+  title: string;
+  cover_image: string;
+  url:string;
+  readable_publish_date: string;
+}
 
 const Blog = () => {
-  const [blogPosts, setBlogPosts] = useState<Array<null>>([]);
 
-  const fetchBlogs = async () => {
-    const options = {
-      method: 'GET',
-      url: 'https://dev.to/api/articles',
-      params: { username: 'pb' },
-    };
-
-    axios
-      .request(options)
-      .then(function (response) {
-        setBlogPosts(response.data);
-      })
-      .catch(function (error) {
-        console.error(error);
-      });
-  };
-  useEffect(() => {
-    fetchBlogs();
-  }, []);
-
+ 
   return (
     <>
       <Text b style={{ letterSpacing: '0.6px' }} h2 marginTop={2}>
@@ -44,7 +32,7 @@ const Blog = () => {
         </Text>
       </Text>
       <Grid style={{ overflow: 'scroll', height: '80vh' }}>
-        {blogPosts.map((blog: any) => (
+        {BlogPosts.map((blog: IBlogDetails) => (
           <Link href={blog?.url} key={blog?.id} target='_blank'>
             <BlogCard {...blog} />
           </Link>
