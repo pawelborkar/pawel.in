@@ -53,20 +53,50 @@ const About = () => {
         </Text>
         <Divider />
         <Spacer h={4} />
-        <Grid style={{display:'flex', justifyContent:'space-between', alignItems:'center'}}>
+        <Grid
+          style={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+          }}
+        >
           <Link href='https://link.pawel.in/git' target='_blank'>
-            <Button shadow type='success-light' icon={<FaGithub />}> GitHub</Button>
+          <FaGithub />
+            {/* <Button
+              style={{ minWidth: '20px' }}
+              shadow
+              type='success-light'
+              icon={<FaGithub />}
+            >
+              GitHub
+            </Button> */}
           </Link>
           <Link href='https://link.pawel.in/twitter' target='_blank'>
-            <Button shadow type='success-light' icon={<FaTwitter />}> Twitter</Button>
+          <FaTwitter />
+            {/* <Button
+              style={{ minWidth: '20px' }}
+              shadow
+              type='success-light'
+              icon={<FaTwitter />}
+            >
+              Twitter
+            </Button> */}
           </Link>
           <Link href='https://link.pawel.in/linkedin' target='_blank'>
-            <Button shadow type='success-light' icon={<FaLinkedinIn />}> LinkedIn</Button>
+          <FaLinkedinIn />
+            {/* <Button
+              style={{ minWidth: '20px' }}
+              shadow
+              type='success-light'
+              icon={<FaLinkedinIn />}
+            >
+              LinkedIn
+            </Button> */}
           </Link>
         </Grid>
       </Grid>
     </Grid>
-  ); 
+  );
 };
 
 export default About;
