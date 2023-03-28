@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react';
 import { Grid, Text } from '@geist-ui/core';
-import axios from 'axios';
 import Link from 'next/link';
 import { BlogCard } from '@/components';
 import { BlogPosts } from './BlogList';
@@ -8,15 +7,13 @@ export interface IBlogDetails {
   id: number;
   title: string;
   cover_image: string;
-  url:string;
+  url: string;
   readable_publish_date: string;
 }
 
 const Blog = () => {
-
- 
   return (
-    <>
+    <Grid padding={2}>
       <Text b style={{ letterSpacing: '0.6px' }} h2 marginTop={2}>
         <Text span type='success'>
           B
@@ -38,7 +35,7 @@ const Blog = () => {
           </Link>
         ))}
       </Grid>
-    </>
+    </Grid>
   );
 };
 
