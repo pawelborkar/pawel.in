@@ -52,7 +52,7 @@ const About = () => {
           kalimba, piano or guitar.
         </Text>
         <Divider />
-        <Spacer h={4} />
+        <Spacer h={1} />
         <Grid
           style={{
             display: 'flex',
@@ -94,6 +94,7 @@ const About = () => {
             </Button> */}
           </Link>
         </Grid>
+        <Spacer h={2} />
       </Grid>
     </Grid>
   );
