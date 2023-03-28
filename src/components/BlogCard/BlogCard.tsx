@@ -19,10 +19,10 @@ const BlogCard = ({
       key={id}
       type={isDark ? 'secondary' : 'default'}
       style={{
-        margin:'8px 8px 16px 0px',
+        margin:'8px 8px 12px 0px',
         background: '#ffffff',
         maxWidth: '600px',
-        minWidth: '340px',
+        minWidth: '290px',
         padding: '0px',
       }}
     >
@@ -34,11 +34,10 @@ const BlogCard = ({
           display: 'flex',
           justifyContent: 'space-between',
           alignItems: 'flex-end',
-          // border:'1px solid salmon'
         }}
       >
         <Grid>
-          <Link href={url}>
+          <Link href={url} target='_blank'>
             <Button
               style={{
                 border: 'none',

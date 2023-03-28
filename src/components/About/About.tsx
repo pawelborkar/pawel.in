@@ -1,7 +1,8 @@
-import { Divider, Grid, Text } from '@geist-ui/core';
+import { Button, Divider, Grid, Spacer, Text } from '@geist-ui/core';
 import { useAtom } from 'jotai';
 import { darkModeToggleAtom } from '@/globalStates';
 import Link from 'next/link';
+import { FaGithub, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
 const About = () => {
   const [isDark] = useAtom(darkModeToggleAtom);
   return (
@@ -51,6 +52,49 @@ const About = () => {
           kalimba, piano or guitar.
         </Text>
         <Divider />
+        <Spacer h={1} />
+        <Grid
+          style={{
+            display: 'flex',
+            justifyContent: 'space-around',
+            alignItems: 'center',
+          }}
+        >
+          <Link href='https://link.pawel.in/git' target='_blank'>
+          <FaGithub />
+            {/* <Button
+              style={{ minWidth: '20px' }}
+              shadow
+              type='success-light'
+              icon={<FaGithub />}
+            >
+              GitHub
+            </Button> */}
+          </Link>
+          <Link href='https://link.pawel.in/twitter' target='_blank'>
+          <FaTwitter />
+            {/* <Button
+              style={{ minWidth: '20px' }}
+              shadow
+              type='success-light'
+              icon={<FaTwitter />}
+            >
+              Twitter
+            </Button> */}
+          </Link>
+          <Link href='https://link.pawel.in/linkedin' target='_blank'>
+          <FaLinkedinIn />
+            {/* <Button
+              style={{ minWidth: '20px' }}
+              shadow
+              type='success-light'
+              icon={<FaLinkedinIn />}
+            >
+              LinkedIn
+            </Button> */}
+          </Link>
+        </Grid>
+        <Spacer h={2} />
       </Grid>
     </Grid>
   );
