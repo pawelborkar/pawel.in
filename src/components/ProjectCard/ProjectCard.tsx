@@ -55,6 +55,7 @@ const ProjectCard = ({
         style={{
           display: 'flex',
           justifyContent: 'flex-start',
+          justifyContent: 'flex-start',
           alignItems: 'center',
         }}
       >
