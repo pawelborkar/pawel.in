@@ -18,13 +18,13 @@ const ProjectCard = ({
   return (
   
     <Card
-      // margin={1}
+      hoverable
+      shadow
       style={{
         backgroundColor: '#ffff',
-        boxShadow: '4px 8px 12px rgba(0,0,0,.3)',
         maxWidth:'600px',
-        margin:'8px 8px 16px 0px',
-        minWidth: '100px'
+        margin:'8px 8px 12px 0px',
+        minWidth: '300px'
       }}
     >
       <Text h4 my={0}>
@@ -36,10 +36,11 @@ const ProjectCard = ({
         {tags.map((tag, idx) => (
           <Tag
             key={idx}
+            
             style={{
               borderRadius: '6px',
               color: '#ffffff',
-              backgroundColor: '#000000',
+              backgroundColor: '#1E1E5D',
               boxShadow: '0 4px 14px 0 rgba(0,0,0,.3)',
             }}
             invert
@@ -67,6 +68,7 @@ const ProjectCard = ({
               color: '#ffffff',
               backgroundColor: '#0070f3',
               boxShadow: '0 4px 14px 0 rgba(0,118,255,0.39)',
+              minWidth:'100px'
             }}
           >
             Code
@@ -82,6 +84,7 @@ const ProjectCard = ({
               backgroundColor: '#ff0090',
               color: '#ffffff',
               boxShadow: '0 4px 8px 0 #f49ac2 ',
+              minWidth:'100px'
             }}
             scale={0.85}
           >

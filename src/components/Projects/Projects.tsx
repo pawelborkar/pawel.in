@@ -54,7 +54,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <Grid padding={2}>
+    <Grid padding={1.5}>
       <Text b style={{ letterSpacing: '0.6px' }} h2 marginTop={2}>
         <Text span type='success'>
           P
