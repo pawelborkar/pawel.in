@@ -22,7 +22,7 @@ const BlogCard = ({
         margin:'8px 8px 8px 0px',
         background: '#ffffff',
         maxWidth: '600px',
-        minWidth: '300px',
+        minWidth: '290px',
         padding: '0px',
       }}
     >
