@@ -24,7 +24,7 @@ const ProjectCard = ({
         backgroundColor: '#ffff',
         maxWidth:'600px',
         margin:'8px 8px 12px 0px',
-        minWidth: '300px'
+        minWidth: '290px'
       }}
     >
       <Text h4 my={0}>
