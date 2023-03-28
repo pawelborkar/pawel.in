@@ -5,9 +5,9 @@ import Link from 'next/link';
 const About = () => {
   const [isDark] = useAtom(darkModeToggleAtom);
   return (
-    <>
+    <Grid padding={2} height='100vh'>
       <header>
-        <Text b style={{ letterSpacing: '0.6px' }} h2 marginTop={4}>
+        <Text b style={{ letterSpacing: '0.6px' }} h2 marginTop={2}>
           <Text span type='success'>
             A
           </Text>
@@ -52,7 +52,7 @@ const About = () => {
         </Text>
         <Divider />
       </Grid>
-    </>
+    </Grid>
   );
 };
 

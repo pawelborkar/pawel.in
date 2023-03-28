@@ -54,7 +54,7 @@ const projects = [
 
 const Projects = () => {
   return (
-    <>
+    <Grid padding={2}>
       <Text b style={{ letterSpacing: '0.6px' }} h2 marginTop={2}>
         <Text span type='success'>
           P
@@ -81,12 +81,12 @@ const Projects = () => {
           s
         </Text>
       </Text>
-      <Grid style={{ overflow: 'scroll', height: '80vh', width: '840px' }}>
+      <Grid style={{ overflow: 'scroll', height: '84vh',}}>
         {projects.map((project) => (
           <ProjectCard key={project.id} {...project} />
         ))}
       </Grid>
-    </>
+    </Grid>
   );
 };
 

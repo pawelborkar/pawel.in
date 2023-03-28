@@ -61,33 +61,36 @@ export default function Home() {
       <main
         className={styles.main}
         style={{
-          backgroundColor: isDark ? '#191128' : '#fff6ea',
           transition: '1.2s',
         }}
       >
         <Background />
         <div className={styles.app}>
-          <Tabs initialValue='1' leftSpace={0}>
+          <Tabs style={{ width: '96vw' }} initialValue='1' leftSpace={0}>
             {TabContent.map((Tab) => {
               return (
                 <Tabs.Item
                   key={Tab.id}
                   label={Tab.label}
                   value={Tab.id.toString()}
+                  style={{ padding:'24px',}}
                 >
                   {Tab.component}
                 </Tabs.Item>
               );
             })}
           </Tabs>
+          {/* <Grid
+            style={{ cursor: 'pointer', padding: '2rem', width: '4vw' }}
+            onClick={toggle}
+          >
+            {isDark ? (
+              <BsSun fontSize={24} />
+            ) : (
+              <BsMoonStarsFill fontSize={18} style={{ color: '#000' }} />
+            )}
+          </Grid> */}
         </div>
-        <Grid style={{ cursor: 'pointer', padding: '2rem' }} onClick={toggle}>
-          {isDark ? (
-            <BsSun fontSize={24} />
-          ) : (
-            <BsMoonStarsFill fontSize={18} style={{ color: '#000' }} />
-          )}
-        </Grid>
       </main>
       {/* <footer>
         <Footer />

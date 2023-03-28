@@ -16,7 +16,17 @@ const ProjectCard = ({
   url,
 }: IProjectProps) => {
   return (
-    <Card  marginBottom={1} style={{ backgroundColor: '#ffff', boxShadow: '4px 8px 12px rgba(0,0,0,.3)'  }}>
+  
+    <Card
+      // margin={1}
+      style={{
+        backgroundColor: '#ffff',
+        boxShadow: '4px 8px 12px rgba(0,0,0,.3)',
+        maxWidth:'600px',
+        margin:'8px 8px 16px 0px',
+        minWidth: '100px'
+      }}
+    >
       <Text h4 my={0}>
         {title}
       </Text>
@@ -26,9 +36,15 @@ const ProjectCard = ({
         {tags.map((tag, idx) => (
           <Tag
             key={idx}
-            style={{ borderRadius:'6px',color:"#ffffff", backgroundColor: '#000000',boxShadow: '0 4px 14px 0 rgba(0,0,0,.3)' }}
+            style={{
+              borderRadius: '6px',
+              color: '#ffffff',
+              backgroundColor: '#000000',
+              boxShadow: '0 4px 14px 0 rgba(0,0,0,.3)',
+            }}
             invert
-            margin={0.5}
+            marginRight={0.6}
+            marginTop={0.2}
           >
             {tag}
           </Tag>
@@ -44,9 +60,14 @@ const ProjectCard = ({
       >
         <Link href={sourceCode} target='_blank'>
           <Button
-            icon={<FaGithub  color='#fff'/>}
-            style={{ border: 'none', color:"#ffffff", backgroundColor: '#0070f3', boxShadow: '0 4px 14px 0 rgba(0,118,255,0.39)' }}
-           
+            icon={<FaGithub color='#fff' />}
+            width={0.8}
+            style={{
+              border: 'none',
+              color: '#ffffff',
+              backgroundColor: '#0070f3',
+              boxShadow: '0 4px 14px 0 rgba(0,118,255,0.39)',
+            }}
           >
             Code
           </Button>
@@ -54,8 +75,14 @@ const ProjectCard = ({
         <Spacer h={1} />
         <Link href={url} target='_blank'>
           <Button
-            icon={<FaGlobe color='#fff'/>}
-            style={{border: 'none', backgroundColor: '#ff0090',  color:"#ffffff", boxShadow: '0 4px 8px 0 #f49ac2 ' }}
+            width={0.8}
+            icon={<FaGlobe color='#fff' />}
+            style={{
+              border: 'none',
+              backgroundColor: '#ff0090',
+              color: '#ffffff',
+              boxShadow: '0 4px 8px 0 #f49ac2 ',
+            }}
             scale={0.85}
           >
             Visit

@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] });
 const HomePage = () => {
   const [isDark] = useAtom(darkModeToggleAtom);
   return (
-    <Grid style={style.container}>
+    <Grid style={style.container} >
       <Grid style={{ width:'60%' }}>
         <Grid style={{ fontWeight: 500 }}>
           <Text b style={{ letterSpacing: '0.6px' }} font={2}>
@@ -60,10 +60,10 @@ const HomePage = () => {
         width='40%'
         height='200px'
         style={{
-          // border: '2px solid salmon',
           display: 'flex',
           justifyContent: 'center',
           alignItems: 'center',
+
         }}
       >
         <Image
