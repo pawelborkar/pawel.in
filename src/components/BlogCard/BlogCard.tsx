@@ -19,7 +19,7 @@ const BlogCard = ({
       key={id}
       type={isDark ? 'secondary' : 'default'}
       style={{
-        margin:'8px 8px 8px 0px',
+        margin:'8px 8px 12px 0px',
         background: '#ffffff',
         maxWidth: '600px',
         minWidth: '290px',
