@@ -1,3 +1,5 @@
+
+
 .main {
   width: 100vw;
   height: 100%;
@@ -8,8 +10,7 @@
 }
 .app {
   color: #cacaca !important;
-  min-width: 280px;
-  max-width: 840px;
+  width: 846px;
   height: 100vh;
   display: flex;
   justify-content: flex;
