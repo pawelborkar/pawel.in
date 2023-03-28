@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { Grid, Text } from '@geist-ui/core';
 import Link from 'next/link';
 import { BlogCard } from '@/components';
@@ -13,7 +12,7 @@ export interface IBlogDetails {
 
 const Blog = () => {
   return (
-    <Grid padding={2}>
+    <Grid padding={1.5}>
       <Text b style={{ letterSpacing: '0.6px' }} h2 marginTop={2}>
         <Text span type='success'>
           B
