@@ -56,7 +56,7 @@ export default function Home() {
         <title>Pawel Borkar</title>
         <meta name='description' content='Pawel is a Frontend Engineer from India. He has a passion for design and great user experience. His passion for a great UI can be seen in his JellyFish Theme for vscode which has more than 200K+ installs on vscode marketplace.' />
         <meta name='viewport' content='width=device-width, initial-scale=1' />
-        <link rel='icon' href='/favicon.ico' />
+        <link rel='icon' href='https://res.cloudinary.com/practicaldev/image/fetch/s--dG92fpoQ--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/618537/3cd782cd-1a3a-4926-9eb6-1e55fba23a61.jpg' />
       </Head>
       <main
         className={styles.main}
