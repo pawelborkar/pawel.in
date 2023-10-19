@@ -76,7 +76,7 @@ export const siteConfig = {
       name: 'My Social Links',
       description:
         'My self made linktree like social links aggregator with added tracking.',
-      url: 'https://links.pawel.in',
+      url: 'https://hi.pawel.in',
       git: 'https://github.com/pawelborkar/links.pawel.in',
       logo: 'https://github.com/pawelborkar/links.pawel.in/raw/master/assets/Screenshot.png',
     },
