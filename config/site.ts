@@ -51,7 +51,7 @@ export const siteConfig = {
       id: '03',
       name: 'JellyFish Theme',
       description: 'JellyFish: Theme your code editor will love.',
-      url: 'https://jellyfish.pawel.in',
+      url: 'https://tinyurl.com/je11yfish',
       git: 'https://github.com/pawelborkar/vscode-jellyfish',
       logo: 'https://raw.githubusercontent.com/pawelborkar/vscode-JellyFish/star/assets/jellyfish.png',
     },
