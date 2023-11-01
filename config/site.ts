@@ -67,7 +67,7 @@ export const siteConfig = {
       id: '04',
       name: 'Bootcamper',
       description: 'Add, Review and Find bootcamps in your country.',
-      url: 'https://api.bootcamper.pawel.in',
+      url: 'https://api.bootcamper.pawel.in/docs',
       git: 'https://github.com/pawelborkar/bootcamper/docs',
       logo: 'https://cdn.dribbble.com/users/606206/screenshots/2034939/b-logo-round-light-dribbble_1x.png',
     },
