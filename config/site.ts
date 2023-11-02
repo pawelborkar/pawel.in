@@ -89,4 +89,33 @@ export const siteConfig = {
       logo: 'https://github.com/pawelborkar/links.pawel.in/raw/master/assets/Screenshot.png',
     },
   ],
+  blogs: [
+    {
+      id: '01',
+      title: 'Git Squash Simplified',
+      url: 'https://dev.to/pb/git-squash-simplified-3ba1',
+    },
+    {
+      id: '02',
+      title: 'Linked List Simplified: Part 1',
+      url: 'https://dev.to/pb/linked-list-simplified-part-1-2ian',
+    },
+    {
+      id: '03',
+      title: 'Open Source Programs for Students to participate',
+      url: 'https://dev.to/pb/open-source-programs-for-students-to-participate-55gm',
+    },
+    {
+      id: '04',
+      title: 'Vim Shortcuts to get you started as a Beginner',
+      url: 'https://dev.to/pb/vim-shortcuts-to-get-you-started-as-a-beginner-4ga0',
+    },
+  ],
+  blogDetails: {
+    avatarUrl:
+      'https://res.cloudinary.com/practicaldev/image/fetch/s--zYp6OJGZ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/618537/3cd782cd-1a3a-4926-9eb6-1e55fba23a61.jpg',
+    author: 'Pawel',
+    twitter: 'https://x.com/pawelsb',
+    username: 'pawelsb',
+  },
 };

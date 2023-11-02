@@ -12,3 +12,9 @@ export type TProject = {
   git: string;
   logo: string;
 };
+
+export type TBlog = {
+  id: string;
+  title: string;
+  url: string;
+};

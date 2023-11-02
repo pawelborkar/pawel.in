@@ -11,7 +11,7 @@ import {
 import { TProject } from '@/types';
 import { GithubIcon } from './icons';
 
-export default function ProjectCard({ ...project }: TProject) {
+const ProjectCard = ({ ...project }: TProject) => {
   return (
     <Card className="bg-white/10 backdrop shadow-lg">
       <CardHeader className="flex justify-around items-center">
@@ -53,4 +53,5 @@ export default function ProjectCard({ ...project }: TProject) {
       <Divider />
     </Card>
   );
-}
+};
+export default ProjectCard;
