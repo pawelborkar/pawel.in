@@ -45,7 +45,7 @@ export const siteConfig = {
         'CryptoHub: Get all information about cryptocurrencies at one place.',
       url: 'https://cryptohub.pawel.in',
       git: 'https://github.com/pawelborkar/cryptohub',
-      logo: 'https://cryptohub.onrender.com/static/media/ring.9e4924c0aeaa54287fae.png',
+      logo: 'public/assets/cryptohub-logo.png',
     },
     {
       id: '02',
@@ -53,7 +53,7 @@ export const siteConfig = {
       description: "Search functionality implemented using Wikipedia's API.",
       url: 'https://wikisearch.pawel.in',
       git: 'https://github.com/pawelborkar/wikisearch',
-      logo: 'https://raw.githubusercontent.com/pawelborkar/wikisearch/master/assets/wiki-logo.png',
+      logo: 'public/assets/wiki-logo.png',
     },
     {
       id: '03',
@@ -61,7 +61,7 @@ export const siteConfig = {
       description: 'JellyFish: Theme your code editor will love.',
       url: 'https://tinyurl.com/je11yfish',
       git: 'https://github.com/pawelborkar/vscode-jellyfish',
-      logo: 'https://raw.githubusercontent.com/pawelborkar/vscode-JellyFish/star/assets/jellyfish.png',
+      logo: 'public/assets/jellyfish.png',
     },
     {
       id: '04',
@@ -69,7 +69,7 @@ export const siteConfig = {
       description: 'Add, Review and Find bootcamps in your country.',
       url: 'https://api.bootcamper.pawel.in/docs',
       git: 'https://github.com/pawelborkar/bootcamper/docs',
-      logo: 'https://cdn.dribbble.com/users/606206/screenshots/2034939/b-logo-round-light-dribbble_1x.png',
+      logo: 'public/bootcamper-logo.png',
     },
     {
       id: '05',
@@ -77,7 +77,7 @@ export const siteConfig = {
       description: "Doodle: Drawing pad you'll gonna love.",
       url: 'https://pen.pawel.in',
       git: 'https://github.com/pawelborkar/doodle',
-      logo: 'https://pen.pawel.in/favicon.ico',
+      logo: 'public/assets/doodle.ico',
     },
     {
       id: '06',
@@ -86,7 +86,7 @@ export const siteConfig = {
         'My self made linktree like social links aggregator with added tracking.',
       url: 'https://hi.pawel.in',
       git: 'https://github.com/pawelborkar/links.pawel.in',
-      logo: 'https://github.com/pawelborkar/links.pawel.in/raw/master/assets/Screenshot.png',
+      logo: 'public/assets/links-pawel.png',
     },
   ],
   blogs: [
@@ -113,7 +113,7 @@ export const siteConfig = {
   ],
   blogDetails: {
     avatarUrl:
-      'https://res.cloudinary.com/practicaldev/image/fetch/s--zYp6OJGZ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/618537/3cd782cd-1a3a-4926-9eb6-1e55fba23a61.jpg',
+      'public/assets/pawel.jpeg',
     author: 'Pawel',
     twitter: 'https://x.com/pawelsb',
     username: 'pawelsb',
