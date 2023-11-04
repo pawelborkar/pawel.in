@@ -1,5 +1,13 @@
-export type SiteConfig = typeof siteConfig;
+// import bootcamper from 'public/assets/bootcamper-logo.png';
+import bootcamper from 'public/assets/bootcamper-logo.png';
+import cryptoHub from 'public/assets/cryptohub-logo.png';
+import jellyfish from 'public/assets/jellyfish.png';
+import doodle from 'public/assets/doodle.ico';
+import pawel from 'public/assets/pawel.jpeg';
+import socialLinks from 'public/assets/links-pawel.png';
+import wikisearch from 'public/assets/wiki-logo.png';
 
+export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: 'Pawel Borkar',
   description:
@@ -10,8 +18,8 @@ export const siteConfig = {
       href: '/#projects',
     },
     {
-      label: 'Blog',
-      href: '/#blog',
+      label: 'Blogs',
+      href: '/#blogs',
     },
     {
       label: 'Diaries',
@@ -24,8 +32,8 @@ export const siteConfig = {
       href: '/#projects',
     },
     {
-      label: 'Blog',
-      href: '/#blog',
+      label: 'Blogs',
+      href: '/#blogs',
     },
     {
       label: 'Diaries',
@@ -43,50 +51,50 @@ export const siteConfig = {
       name: 'CryptoHub',
       description:
         'CryptoHub: Get all information about cryptocurrencies at one place.',
-      url: 'https://cryptohub.pawel.in',
+      url: 'cryptohub.pawel.in',
       git: 'https://github.com/pawelborkar/cryptohub',
-      logo: 'public/assets/cryptohub-logo.png',
+      logo: cryptoHub,
     },
     {
       id: '02',
       name: 'WikiSearch',
       description: "Search functionality implemented using Wikipedia's API.",
-      url: 'https://wikisearch.pawel.in',
+      url: 'wikisearch.pawel.in',
       git: 'https://github.com/pawelborkar/wikisearch',
-      logo: 'public/assets/wiki-logo.png',
+      logo: wikisearch,
     },
     {
       id: '03',
       name: 'JellyFish Theme',
       description: 'JellyFish: Theme your code editor will love.',
-      url: 'https://tinyurl.com/je11yfish',
+      url: 'tinyurl.com/je11yfish',
       git: 'https://github.com/pawelborkar/vscode-jellyfish',
-      logo: 'public/assets/jellyfish.png',
+      logo: jellyfish,
     },
     {
       id: '04',
       name: 'Bootcamper',
       description: 'Add, Review and Find bootcamps in your country.',
-      url: 'https://api.bootcamper.pawel.in/docs',
+      url: 'api.bootcamper.pawel.in/docs',
       git: 'https://github.com/pawelborkar/bootcamper/docs',
-      logo: 'public/bootcamper-logo.png',
+      logo: bootcamper,
     },
     {
       id: '05',
       name: 'Doodle',
       description: "Doodle: Drawing pad you'll gonna love.",
-      url: 'https://pen.pawel.in',
+      url: 'pen.pawel.in',
       git: 'https://github.com/pawelborkar/doodle',
-      logo: 'public/assets/doodle.ico',
+      logo: doodle,
     },
     {
       id: '06',
       name: 'My Social Links',
       description:
         'My self made linktree like social links aggregator with added tracking.',
-      url: 'https://hi.pawel.in',
+      url: 'hi.pawel.in',
       git: 'https://github.com/pawelborkar/links.pawel.in',
-      logo: 'public/assets/links-pawel.png',
+      logo: socialLinks,
     },
   ],
   blogs: [
@@ -112,8 +120,7 @@ export const siteConfig = {
     },
   ],
   blogDetails: {
-    avatarUrl:
-      'public/assets/pawel.jpeg',
+    avatarUrl: 'https://media.licdn.com/dms/image/C5603AQEEyqfszoVe5g/profile-displayphoto-shrink_400_400/0/1657829032658?e=1704326400&v=beta&t=XPn71DuPMPXvOrA32CImJgpHgkWv161Ts3jptaNfAZA',
     author: 'Pawel',
     twitter: 'https://x.com/pawelsb',
     username: 'pawelsb',
