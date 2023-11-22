@@ -1,25 +1,19 @@
 'use client';
 import React from 'react';
-import {
-  Card,
-  CardHeader,
-  CardBody,
-  Divider,
-  Link,
-  Image,
-} from '@nextui-org/react';
+import Image from 'next/image';
+import { Card, CardHeader, CardBody, Divider, Link } from '@nextui-org/react';
 import { TProject } from '@/types';
 import { GithubIcon } from './icons';
 
 const ProjectCard = ({ ...project }: TProject) => {
   return (
-    <Card className="bg-white/10 backdrop shadow-lg">
+    <Card className="w-80 bg-white/10 backdrop shadow-lg">
       <CardHeader className="flex justify-around items-center">
         <div className="flex justify-around items-center">
           <Image
             alt="nextui logo"
             height={40}
-            radius="sm"
+            className="rounded"
             src={project.logo}
             width={40}
           />
@@ -29,7 +23,7 @@ const ProjectCard = ({ ...project }: TProject) => {
               color="warning"
               isExternal
               showAnchorIcon
-              href={project.url}
+              href={`https://${project.url}`}
               className="text-small cursor-pointer text-default-500"
             >
               {project.url}

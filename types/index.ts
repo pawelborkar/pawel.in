@@ -1,3 +1,4 @@
+import { StaticImageData } from 'next/image';
 import { SVGProps } from 'react';
 
 export type IconSvgProps = SVGProps<SVGSVGElement> & {
@@ -10,7 +11,7 @@ export type TProject = {
   description: string;
   url: string;
   git: string;
-  logo: string;
+  logo: StaticImageData;
 };
 
 export type TBlog = {

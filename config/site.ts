@@ -1,5 +1,11 @@
-export type SiteConfig = typeof siteConfig;
+import bootcamper from 'public/assets/bootcamper-logo.png';
+import cryptoHub from 'public/assets/cryptohub-logo.png';
+import jellyfish from 'public/assets/jellyfish.png';
+import doodle from 'public/assets/doodle.ico';
+import socialLinks from 'public/assets/links-pawel.png';
+import wikisearch from 'public/assets/wiki-logo.png';
 
+export type SiteConfig = typeof siteConfig;
 export const siteConfig = {
   name: 'Pawel Borkar',
   description:
@@ -10,8 +16,8 @@ export const siteConfig = {
       href: '/#projects',
     },
     {
-      label: 'Blog',
-      href: '/#blog',
+      label: 'Blogs',
+      href: '/#blogs',
     },
     {
       label: 'Diaries',
@@ -24,8 +30,8 @@ export const siteConfig = {
       href: '/#projects',
     },
     {
-      label: 'Blog',
-      href: '/#blog',
+      label: 'Blogs',
+      href: '/#blogs',
     },
     {
       label: 'Diaries',
@@ -41,52 +47,50 @@ export const siteConfig = {
     {
       id: '01',
       name: 'CryptoHub',
-      description:
-        'CryptoHub: Get all information about cryptocurrencies at one place.',
-      url: 'https://cryptohub.pawel.in',
+      description: 'CryptoHub: Get all information about cryptocurrencies at one place.',
+      url: 'go.pawel.in/cryptohub',
       git: 'https://github.com/pawelborkar/cryptohub',
-      logo: 'https://cryptohub.onrender.com/static/media/ring.9e4924c0aeaa54287fae.png',
+      logo: cryptoHub,
     },
     {
       id: '02',
       name: 'WikiSearch',
       description: "Search functionality implemented using Wikipedia's API.",
-      url: 'https://wikisearch.pawel.in',
+      url: 'go.pawel.in/wikisearch',
       git: 'https://github.com/pawelborkar/wikisearch',
-      logo: 'https://raw.githubusercontent.com/pawelborkar/wikisearch/master/assets/wiki-logo.png',
+      logo: wikisearch,
     },
     {
       id: '03',
       name: 'JellyFish Theme',
       description: 'JellyFish: Theme your code editor will love.',
-      url: 'https://tinyurl.com/je11yfish',
+      url: 'go.pawel.in/jellyfish',
       git: 'https://github.com/pawelborkar/vscode-jellyfish',
-      logo: 'https://raw.githubusercontent.com/pawelborkar/vscode-JellyFish/star/assets/jellyfish.png',
+      logo: jellyfish,
     },
     {
       id: '04',
       name: 'Bootcamper',
       description: 'Add, Review and Find bootcamps in your country.',
-      url: 'https://api.bootcamper.pawel.in/docs',
+      url: 'go.pawel.in/bootcamper',
       git: 'https://github.com/pawelborkar/bootcamper/docs',
-      logo: 'https://cdn.dribbble.com/users/606206/screenshots/2034939/b-logo-round-light-dribbble_1x.png',
+      logo: bootcamper,
     },
     {
       id: '05',
       name: 'Doodle',
       description: "Doodle: Drawing pad you'll gonna love.",
-      url: 'https://pen.pawel.in',
+      url: 'go.pawel.in/doodle',
       git: 'https://github.com/pawelborkar/doodle',
-      logo: 'https://pen.pawel.in/favicon.ico',
+      logo: doodle,
     },
     {
       id: '06',
       name: 'My Social Links',
-      description:
-        'My self made linktree like social links aggregator with added tracking.',
-      url: 'https://hi.pawel.in',
+      description: 'My self made linktree like social links aggregator with added tracking.',
+      url: 'go.pawel.in/social',
       git: 'https://github.com/pawelborkar/links.pawel.in',
-      logo: 'https://github.com/pawelborkar/links.pawel.in/raw/master/assets/Screenshot.png',
+      logo: socialLinks,
     },
   ],
   blogs: [
@@ -113,7 +117,7 @@ export const siteConfig = {
   ],
   blogDetails: {
     avatarUrl:
-      'https://res.cloudinary.com/practicaldev/image/fetch/s--zYp6OJGZ--/c_fill,f_auto,fl_progressive,h_90,q_auto,w_90/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/618537/3cd782cd-1a3a-4926-9eb6-1e55fba23a61.jpg',
+      'https://res.cloudinary.com/practicaldev/image/fetch/s--dG92fpoQ--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/618537/3cd782cd-1a3a-4926-9eb6-1e55fba23a61.jpg',
     author: 'Pawel',
     twitter: 'https://x.com/pawelsb',
     username: 'pawelsb',
