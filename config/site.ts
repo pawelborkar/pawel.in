@@ -117,7 +117,7 @@ export const siteConfig = {
   ],
   blogDetails: {
     avatarUrl:
-      'https://media.licdn.com/dms/image/C5603AQEEyqfszoVe5g/profile-displayphoto-shrink_400_400/0/1657829032658?e=1704326400&v=beta&t=XPn71DuPMPXvOrA32CImJgpHgkWv161Ts3jptaNfAZA',
+      'https://res.cloudinary.com/practicaldev/image/fetch/s--dG92fpoQ--/c_fill,f_auto,fl_progressive,h_320,q_auto,w_320/https://dev-to-uploads.s3.amazonaws.com/uploads/user/profile_image/618537/3cd782cd-1a3a-4926-9eb6-1e55fba23a61.jpg',
     author: 'Pawel',
     twitter: 'https://x.com/pawelsb',
     username: 'pawelsb',
